@@ -45,11 +45,11 @@ export default function Navbar() {
                     href="/"
                     onClick={handleInicioClick}
                     className="absolute left-6 lg:left-8 top-2.5 group select-none cursor-pointer z-10"
-                    title="Centro de Yoga Salvadora Conesa - Inicio"
+                    title="Soniquete Flamenco - Inicio"
                 >
                     <img
-                        src="/imagenes/logo/logo.png"
-                        alt="Logo Centro de Yoga Salvadora Conesa"
+                        src="/logos/soniqueteflamenco_512x512.png"
+                        alt="Logo Soniquete Flamenco"
                         className="h-[52px] w-auto object-contain transition duration-300 group-hover:scale-105"
                     />
                 </a>
@@ -118,8 +118,8 @@ export default function Navbar() {
                     </button>
                     <a href="/" onClick={handleInicioClick} className="cursor-pointer">
                         <img
-                            src="/imagenes/logo/logo.png"
-                            alt="Logo Centro de Yoga Salvadora Conesa"
+                            src="/logos/soniqueteflamenco_512x512.png"
+                            alt="Logo Soniquete Flamenco"
                             className="h-11 w-auto object-contain transition duration-200"
                         />
                     </a>

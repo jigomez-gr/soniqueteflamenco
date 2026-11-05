@@ -268,7 +268,7 @@ const localBusinessJsonLd = {
   name: "Centro de Yoga Salvadora Conesa",
   alternateName: "Escuela de Yoga Salvadora Conesa",
   url: "https://centrodeyogasalvadoraconesa.es",
-  logo: "https://centrodeyogasalvadoraconesa.es/imagenes/logo/logo.png",
+  logo: "https://soniqueteflamenco.com/logos/soniqueteflamenco_512x512.png",
   image: "https://soniqueteflamenco.com/imagenes/quienes-somos/pedro-cajon-gonzalez.jpg",
   description:
     "Clases de Hatha y Kundalini yoga, baños y puja de gong, meditación guiada y retiros de ayuno terapéutico en Fuenlabrada, dirigido por Salvadora Conesa.",

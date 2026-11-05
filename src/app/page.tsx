@@ -345,6 +345,15 @@ export default async function Home() {
             </p>
           </div>
 
+          {/* Foto al comienzo de Quiénes somos */}
+          <div className="mb-12 max-w-4xl mx-auto overflow-hidden rounded-2xl border-2 border-[#C5A059]/40 shadow-xl bg-stone-900 group">
+            <img
+              src="/imagenes/quienes-somos/quienes-somos-fundadores.jpg"
+              alt="Pedro Cajón González y José Luis Poveda Cabrilla - Quiénes somos Soniquete Flamenco"
+              className="w-full h-auto object-cover group-hover:scale-105 transition duration-700"
+            />
+          </div>
+
           {/* Bloque introductorio */}
           <div className="bg-white p-6 sm:p-10 rounded-2xl border border-[#C5A059]/25 shadow-sm space-y-5 text-sm sm:text-base text-[#1C1C1C]/85 leading-relaxed font-sans mb-12">
             <p className="text-base sm:text-lg text-stone-900 font-medium">
