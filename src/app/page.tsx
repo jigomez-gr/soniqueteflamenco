@@ -242,7 +242,7 @@ export default async function Home() {
           </div>
 
           <h1 className="hero-title font-serif text-xl sm:text-3.5xl md:text-[44px] lg:text-[48px] font-extrabold tracking-tight text-[#800020] uppercase leading-tight mb-1 sm:mb-1.5 select-none">
-            CENTRO DE YOGA FUENLABRADA
+            HACEMOS CONCIERTOS FLAMENCOS
           </h1>
 
           <p className="hero-desc text-[9px] sm:text-xs tracking-[0.12em] sm:tracking-[0.2em] text-[#96680E] uppercase font-extrabold text-center max-w-3xl mb-3 sm:mb-4.5 mt-1 px-4 sm:px-0">

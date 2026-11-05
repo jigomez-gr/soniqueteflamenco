@@ -57,10 +57,10 @@ export default function Navbar() {
                 {/* Centered Brand Text Block */}
                 <a href="/" onClick={handleInicioClick} className="flex flex-col items-center leading-tight mb-2.5 select-none cursor-pointer">
                     <div className="flex items-center space-x-1.5 text-[10px] tracking-widest text-[#96680E] uppercase font-extrabold">
-                        <span>soniquete.com promocion de artistas</span>
+                        <span>soniqueteflamenco.com</span>
                     </div>
                     <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#800020] tracking-wide uppercase font-editorial">
-                        REALIZACION DE CONCIERTOS FLAMENCOS
+                        PROMOCION ARTISTAS
                     </h2>
                 </a>
 
@@ -128,10 +128,10 @@ export default function Navbar() {
                 {/* Center: Brand TEXT */}
                 <div className="flex-1 flex flex-col items-center justify-center select-none text-center px-2 leading-tight min-w-0">
                     <span className="text-[8.5px] xs:text-[9.5px] tracking-wider text-[#96680E] uppercase font-extrabold truncate max-w-full">
-                        soniquete.com promocion de artistas
+                        soniqueteflamenco.com
                     </span>
                     <span className="font-serif text-[15px] xs:text-[18px] font-black text-[#800020] uppercase tracking-wide leading-none mt-1 font-editorial truncate max-w-full">
-                        REALIZACION DE CONCIERTOS FLAMENCOS
+                        PROMOCION ARTISTAS
                     </span>
                 </div>
 
