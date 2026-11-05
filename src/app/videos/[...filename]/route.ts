@@ -68,7 +68,7 @@ export async function GET(
     const baseName = Array.isArray(filename) ? filename[filename.length - 1] : String(filename);
 
     const storageRoot =
-      process.env.MEDIA_STORAGE_ROOT || "d:/tmp/antigraviti/salvadora/media_base";
+      process.env.MEDIA_STORAGE_ROOT || "d:/tmp/antigraviti/soniqueteflamenco/media_base";
     const videosDir =
       process.env.MEDIA_VIDEOS_DIR || path.join(storageRoot, "videos");
     const docsDir =
@@ -115,9 +115,9 @@ export async function GET(
     candidatePaths.push(path.join(videosDir, rawPath));
     candidatePaths.push(path.join(docsDir, rawPath));
     candidatePaths.push(path.join(storageRoot, rawPath));
-    candidatePaths.push(`/var/data/salvadora/media/videos/${rawPath}`);
-    candidatePaths.push(`/var/data/salvadora/media/documentos/${rawPath}`);
-    candidatePaths.push(`/var/data/salvadora/media/${rawPath}`);
+    candidatePaths.push(`/var/data/soniqueteflamenco/media/videos/${rawPath}`);
+    candidatePaths.push(`/var/data/soniqueteflamenco/media/documentos/${rawPath}`);
+    candidatePaths.push(`/var/data/soniqueteflamenco/media/${rawPath}`);
     candidatePaths.push(path.join(process.cwd(), "public", "videos", rawPath));
 
     // Fallbacks with baseName and known subdirectories

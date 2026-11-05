@@ -12,7 +12,7 @@ export default function Navbar() {
 
     const menuItems = [
         { label: "Inicio", href: "/#inicio" },
-        { label: "Sobre Mí", href: "/#sobre-mi" },
+        { label: "Quiénes somos", href: "/#quienes-somos" },
         { label: "Actividades", href: "/#itinerario" },
         { label: "Vídeos", href: "/#videos" },
         { label: "Viajes Realizados", href: "/#viajes-realizados" },

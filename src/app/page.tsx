@@ -329,53 +329,183 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* 4. Sección Sobre Mí */}
-      <section id="sobre-mi" className="py-20 bg-[#FAF9F6] border-b border-[#C5A059]/20 scroll-mt-24">
+      {/* 4. Sección Quiénes somos */}
+      <section id="quienes-somos" className="py-20 bg-[#FAF9F6] border-b border-[#C5A059]/20 scroll-mt-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          {/* Cabecera de la sección */}
+          <div className="text-center mb-14">
             <span className="text-xs uppercase tracking-widest text-[#96680E] font-extrabold block mb-2">
-              Trayectoria y Filosofía
+              Trayectoria, Amistad y Pasión Flamenca
             </span>
             <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#800020]">
-              Sobre Mí
+              Quiénes somos
             </h2>
+            <p className="mt-4 font-serif text-lg sm:text-2xl text-[#800020]/90 italic max-w-3xl mx-auto font-medium">
+              Dos vidas, una amistad y una pasión compartida: el flamenco
+            </p>
           </div>
 
-          <div className="space-y-8 text-sm sm:text-base text-[#1C1C1C]/80 leading-relaxed font-sans">
-            {/* Bloque 1 de texto */}
-            <div className="space-y-4 text-justify sm:text-left bg-white p-6 sm:p-8 rounded-xl border border-[#C5A059]/20 shadow-sm">
-              <p>
-                En el año 1.985, después de padecer grandes problemas en mi espalda debido a una escoliosis muy severa, conozco el grupo de yoga que pertenece a la G.F.U. Al comenzar a hacer yoga tres veces en semana, en un par de meses puedo dejar la rehabilitación a la que me sometía hacía más de 7 años. Esta experiencia, me hizo adentrarme en la práctica y conocimientos del yoga, hice la formación como instructora y desde 1.986 he continuado, impartiendo clases o seminarios y profundizando e investigando en sus distintas escuelas y vertientes, desarrollándome especialmente desde lo vivencial. Es cierto que el yoga tiene una gran carga filosófica y espiritual a la que no renuncio, aunque observo que la necesidad principal de las personas que se acercan a las clases es básicamente de origen emocional y físico.
-              </p>
-              <p>
-                A lo largo del desarrollo de esta técnica, observé una gran mejoría en personas que empiezan con problemas en la espalda, básicamente contracturas, lumbalgias, ciáticas e incluso hernias discales. Esto me llevó a querer profundizar en el yoga terapéutico. Para ello, recibo formación en <strong className="text-[#800020] font-semibold">ESTIRAMIENTOS DE CADENAS MUSCULARES, ANTIGIMNASIA, CORRECCIÓN POSTURAL, DIAFROTERAPIA Y MICROGIMNASIA</strong>. Adapto todas estas técnicas a la clase de yoga, mezclando estiramientos con asanas (posturas concretas de yoga) y elaboro un método de posturas beneficiosas con ciertos retoques que incorporan estas técnicas, no dejo atrás el yoga porque siento que la estática y la concentración en cada postura aumenta el beneficio.
-              </p>
-            </div>
+          {/* Bloque introductorio */}
+          <div className="bg-white p-6 sm:p-10 rounded-2xl border border-[#C5A059]/25 shadow-sm space-y-5 text-sm sm:text-base text-[#1C1C1C]/85 leading-relaxed font-sans mb-12">
+            <p className="text-base sm:text-lg text-stone-900 font-medium">
+              <strong className="text-[#800020] font-bold">Soniqueteflamenco</strong> no nace de un despacho ni de una estrategia comercial. Nace de una amistad que ha atravesado décadas, de dos compañeros de trabajo, de fatigas y de historia, y de una pasión compartida por la música, la poesía y la libertad.
+            </p>
+            <p>
+              Venimos de aquella España en blanco y negro, de los últimos años de la dictadura franquista y de quienes se rebelaron contra ella. Vivimos las luchas por la democracia, los sueños de la Transición y la explosión de libertad y creatividad de la Movida madrileña.
+            </p>
+            <p>
+              Entre canciones, libros, viajes, proyectos, amores, derrotas y nuevos comienzos, aprendimos que hay cosas que merecen ser defendidas toda la vida. La cultura es una de ellas.
+            </p>
+            <p className="font-medium text-[#800020]">
+              Hoy, después de muchos caminos recorridos, nos encontramos de nuevo alrededor de una pasión que nunca nos abandonó: <strong>el flamenco</strong>.
+            </p>
+            <p>
+              No pretendemos reinventarlo. Queremos contribuir a que siga vivo, acercar sus artistas al público y crear escenarios donde el talento, la emoción y el duende encuentren su lugar.
+            </p>
+          </div>
 
-            {/* Foto anexa */}
-            <div className="my-10 max-w-2xl mx-auto">
-              <div className="bg-white p-3 rounded-2xl border border-[#C5A059]/30 shadow-xl overflow-hidden hover:shadow-2xl transition duration-500">
-                <div className="relative aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden">
+          {/* Perfil 1: Pedro Cajón González */}
+          <div className="bg-white rounded-2xl border border-[#C5A059]/30 shadow-md p-6 sm:p-10 mb-12 overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+              <div className="md:col-span-5 flex flex-col items-center">
+                <div className="relative w-full max-w-[280px] aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border-2 border-[#C5A059]/40 bg-stone-900 group">
                   <img
-                    src="/imagenes/salvadora/sobre_mi.jpg"
-                    alt="Salvadora Conesa - Práctica de Yoga"
-                    className="w-full h-full object-cover object-center"
+                    src="/imagenes/quienes-somos/pedro-cajon-gonzalez.jpg"
+                    alt="Pedro Cajón González - Promotor Flamenco"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-700"
                   />
                 </div>
-                <p className="text-center font-serif italic text-xs sm:text-sm text-[#800020] mt-3 font-semibold">
-                  Salvadora Conesa — Fundadora del Centro de Yoga Fuenlabrada desde 1986
+                <p className="mt-3 text-center font-serif text-sm font-bold text-[#800020]">
+                  Pedro Cajón González
                 </p>
+                <span className="text-[11px] text-[#96680E] font-semibold uppercase tracking-wider">
+                  Promotor Flamenco
+                </span>
+              </div>
+              <div className="md:col-span-7 space-y-4 text-sm sm:text-base text-[#1C1C1C]/85 leading-relaxed font-sans">
+                <div>
+                  <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#800020]">
+                    Pedro Cajón González
+                  </h3>
+                  <h4 className="font-serif text-base sm:text-lg italic text-[#96680E] font-semibold mt-1">
+                    Una vida entre artistas, peñas y escenarios
+                  </h4>
+                </div>
+                <p>
+                  Pedro es, ante todo, un melómano. Un enamorado de la música que encontró en el flamenco una forma de entender la vida.
+                </p>
+                <p>
+                  Aficionado al cante desde que tiene memoria, comenzó su actividad como promotor flamenco en el año 2000, encargándose de la programación de artistas del festival <em>Ese Arte que Duele</em>.
+                </p>
+                <p>
+                  Desde entonces ha organizado recitales en distintas peñas flamencas de Madrid, colaborado con destacados promotores de la capital, participado en asociaciones culturales flamencas y asesorado la programación de ciclos musicales.
+                </p>
+                <p>
+                  Pero su relación con el flamenco va mucho más allá de los escenarios.
+                </p>
+                <p>
+                  Ha compartido vivencias con artistas en las cuevas de Andalucía, ha conocido el flamenco en sus espacios más íntimos y conserva amistades nacidas entre guitarras, conversaciones interminables y madrugadas que parecían no tener fin.
+                </p>
+                <p>
+                  A esa experiencia se suma una intensa trayectoria personal: el trabajo, la familia, la aventura de emprender distintos negocios y una vida recorrida con curiosidad y pasión.
+                </p>
+                <p>
+                  Pedro conoce el flamenco desde dentro. No solo por los conciertos que ha organizado, sino por las personas que ha conocido y los afectos que ha cultivado.
+                </p>
+                <div className="rounded-xl bg-[#FAF9F6] border-l-4 border-[#800020] p-4 text-[#800020] font-semibold italic text-sm sm:text-base">
+                  «Para él, el flamenco es, antes que nada, una forma de vivir.»
+                </div>
               </div>
             </div>
+          </div>
 
-            {/* Bloque 2 de texto */}
-            <div className="space-y-4 text-justify sm:text-left bg-white p-6 sm:p-8 rounded-xl border border-[#C5A059]/20 shadow-sm">
-              <p>
-                Con el tiempo constato como el aprender a estar parado y respirar simplemente aporta grandes beneficios a los practicantes y es más, a nivel emocional están sucediendo cosas que me llaman la atención. Paralelamente se me facilita la posibilidad de hacer una formación a nivel psicológico, me formo en <strong className="text-[#800020] font-semibold">TERAPIA GESTALT</strong>, como profesión de ayuda. Y desde ahí comienzo a utilizar un lenguaje que junto al pensamiento positivo, que ya estaba utilizando desde los primeros tiempos de yoga, y a la <strong className="text-[#800020] font-semibold">PNL (programación neurolingüística)</strong> me permite constatar como personas que vienen con estados de depresión, ansiedad y emocionalmente muy dañadas empiezan a mejorar y comienzan un auto cuidado que les beneficia, necesitando cada vez menos fármacos o incluso mejorando hasta prescindir (según prescripción de su médico) de ellos.
-              </p>
-              <p>
-                Con el paso de los años observo con agrado, que algunas personas vienen a yoga porque se lo recomienda su médico bien porque previamente lo ha experimentado o porque ha visto resultados muy favorables en otros pacientes. También realizo la formación en <strong className="text-[#800020] font-semibold">MOVIMIENTO EXPRESIVO</strong> que me habilita para dar masaje circulatorio y sensitivo, además puedo ofrecer algo más dinámico y divertido que se hace con una base musical. Siento que estoy colaborando a difundir y realizar un trabajo precioso y sanador. Mi principal propósito es que me gustaría difundirlo para que pudiese llegar a la mayor cantidad posible de personas y que estas pudieran comprobar los beneficios. Además, el que uno de los lugares donde ahora mismo estoy impartiendo yoga sea en las instalaciones de un club social situado en Fuenlabrada llamado Parque Granada me permite que los precios sean accesibles a todas las personas, incluso con bajo presupuesto y esto me llena de satisfacción.
-              </p>
+          {/* Perfil 2: José Luis Poveda Cabrilla */}
+          <div className="bg-white rounded-2xl border border-[#C5A059]/30 shadow-md p-6 sm:p-10 mb-12 overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+              <div className="md:col-span-5 flex flex-col items-center md:order-2">
+                <div className="relative w-full max-w-[280px] aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border-2 border-[#C5A059]/40 bg-stone-900 group">
+                  <img
+                    src="/imagenes/quienes-somos/jose-luis-poveda-cabrilla.jpg"
+                    alt="José Luis Poveda Cabrilla - Programador, Escritor y Promotor"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-700"
+                  />
+                </div>
+                <p className="mt-3 text-center font-serif text-sm font-bold text-[#800020]">
+                  José Luis Poveda Cabrilla
+                </p>
+                <span className="text-[11px] text-[#96680E] font-semibold uppercase tracking-wider">
+                  Innovación y Cultura
+                </span>
+              </div>
+              <div className="md:col-span-7 space-y-4 text-sm sm:text-base text-[#1C1C1C]/85 leading-relaxed font-sans md:order-1">
+                <div>
+                  <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#800020]">
+                    José Luis Poveda Cabrilla
+                  </h3>
+                  <h4 className="font-serif text-base sm:text-lg italic text-[#96680E] font-semibold mt-1">
+                    La vida como aventura, la poesía como refugio
+                  </h4>
+                </div>
+                <p>
+                  José Luis pertenece a esa generación que llegó a la juventud cuando España comenzaba a sacudirse sus silencios.
+                </p>
+                <p>
+                  Su historia podría comenzar en el otoño de 1976, cuando, en medio de una tormenta sentimental, recibió una llamada para incorporarse a un Ministerio. Era una oportunidad inesperada y el principio de un camino que lo llevaría mucho más lejos de lo imaginado.
+                </p>
+                <p>
+                  Descubrió muy pronto la programación informática, una disciplina en la que encontró una vocación casi musical: la posibilidad de construir mundos nuevos a partir de la imaginación y la inteligencia.
+                </p>
+                <p>
+                  Pero no estaba hecho para permanecer inmóvil.
+                </p>
+                <p>
+                  Con apenas 27 años, una mochila y más preguntas que certezas, cruzó el Atlántico rumbo a San Juan de Puerto Rico para trabajar en la Universidad de Puerto Rico.
+                </p>
+                <p>
+                  Después vendrían otros trabajos, proyectos, iniciativas empresariales, viajes, encuentros y desencuentros. Una vida intensa, atravesada por el deseo de crear, por la curiosidad y por esa necesidad de empezar de nuevo que acompaña a quienes nunca terminan de conformarse.
+                </p>
+                <p>
+                  Y siempre, como un hilo invisible, estuvieron la música y la poesía.
+                </p>
+                <p>
+                  Porque, como escribió en el prólogo de una novela autobiográfica, parecía que <strong>«un dios le había plantado las canciones en el alma»</strong>.
+                </p>
+                <p>
+                  José Luis llega a Soniqueteflamenco con esa mezcla de experiencia, imaginación y entusiasmo que convierte cualquier proyecto en una nueva aventura.
+                </p>
+                <div className="rounded-xl bg-[#FAF9F6] border-l-4 border-[#800020] p-4 text-[#800020] font-semibold italic text-sm sm:text-base">
+                  «Para él, la cultura es una expresión de libertad y una manera de seguir enamorado de la vida.»
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bloque Cierre: Soniqueteflamenco: el encuentro */}
+          <div className="bg-gradient-to-br from-[#800020] to-[#5a0016] text-white p-8 sm:p-12 rounded-2xl shadow-xl space-y-6 text-center">
+            <span className="text-xs uppercase tracking-widest text-[#E6C687] font-bold block">
+              El Encuentro
+            </span>
+            <h3 className="font-serif text-2xl sm:text-4xl font-bold text-white">
+              Soniqueteflamenco: el encuentro
+            </h3>
+            <p className="text-base sm:text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
+              Somos dos trayectorias diferentes y una misma voluntad.
+            </p>
+            <p className="text-sm sm:text-base text-white/80 max-w-3xl mx-auto leading-relaxed">
+              Creemos en los artistas que necesitan escenarios, en el público que busca emociones verdaderas y en esa extraordinaria capacidad del flamenco para unir generaciones, territorios y sensibilidades.
+            </p>
+            <p className="text-sm sm:text-base text-white/80 max-w-3xl mx-auto leading-relaxed">
+              Queremos impulsar conciertos, acompañar a los artistas y contribuir, desde Madrid, a la difusión de un arte que no pertenece al pasado porque sigue reinventándose cada vez que alguien canta, toca o baila.
+            </p>
+            <p className="text-sm sm:text-base text-[#E6C687] max-w-3xl mx-auto font-medium">
+              No nos mueve la nostalgia, aunque tengamos mucha memoria.
+            </p>
+            <div className="inline-block py-3 px-6 rounded-full bg-white/10 backdrop-blur-xs border border-white/20 text-white font-serif italic text-base sm:text-lg font-bold">
+              «Nos mueve el deseo de seguir haciendo cosas que merezcan la pena.»
+            </div>
+            <div className="pt-4 border-t border-white/20 text-xs sm:text-sm text-white/70">
+              <strong className="text-white text-base font-serif block">Soniqueteflamenco.com</strong>
+              <span className="italic">Promoción de Artistas y Realización de Conciertos de Flamenco.</span>
             </div>
           </div>
         </div>

@@ -78,7 +78,7 @@ export interface CrmServicesResponse {
 export const CRM_API_BASE_URL =
   process.env.CRM_API_URL ||
   process.env.NEXT_PUBLIC_CRM_API_URL ||
-  "https://crm-salvadoraconesa.jigretera.com";
+  "https://crm.soniqueteconarte.jigretera.com";
 
 export const CRM_SERVICES_ENDPOINT = `${CRM_API_BASE_URL}/api/widget/services`;
 

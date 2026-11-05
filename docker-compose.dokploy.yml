@@ -1,0 +1,36 @@
+# Stack de Dokploy para la Landing de Soniquete Flamenco (soniqueteflamenco)
+# Conectada en vivo al CRM (https://crm.soniqueteconarte.jigretera.com)
+# Comparte el volumen multimedia /var/data/soniqueteflamenco/media en el servidor.
+
+services:
+  landing:
+    build:
+      context: .
+    restart: unless-stopped
+    expose:
+      - "3000"
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      NEXT_PUBLIC_CRM_API_URL: ${NEXT_PUBLIC_CRM_API_URL:-https://crm.soniqueteconarte.jigretera.com}
+      CRM_API_URL: ${CRM_API_URL:-https://crm.soniqueteconarte.jigretera.com}
+      NEXT_PUBLIC_DEFAULT_AGENT_KEY: ${NEXT_PUBLIC_DEFAULT_AGENT_KEY:-booking}
+      NEXT_PUBLIC_BUSINESS_NAME: ${NEXT_PUBLIC_BUSINESS_NAME:-Soniquete con Arte · Promoción Flamenca}
+      PORWASSAP: ${PORWASSAP:-S}
+      NEXT_PUBLIC_PORWASSAP: ${NEXT_PUBLIC_PORWASSAP:-S}
+      PORVAPI: ${PORVAPI:-S}
+      NEXT_PUBLIC_PORVAPI: ${NEXT_PUBLIC_PORVAPI:-S}
+      NUMEROWASSAP: ${NUMEROWASSAP:-34 648 21 26 50}
+      NEXT_PUBLIC_NUMEROWASSAP: ${NEXT_PUBLIC_NUMEROWASSAP:-34 648 21 26 50}
+      MEDIA_STORAGE_ROOT: ${MEDIA_STORAGE_ROOT:-/var/data/soniqueteflamenco/media}
+      MEDIA_VIDEOS_DIR: ${MEDIA_VIDEOS_DIR:-/var/data/soniqueteflamenco/media/videos}
+      MEDIA_DOCUMENTS_DIR: ${MEDIA_DOCUMENTS_DIR:-/var/data/soniqueteflamenco/media/documentos}
+      MEDIA_FLYERS_DIR: ${MEDIA_FLYERS_DIR:-/var/data/soniqueteflamenco/media/flyers}
+    volumes:
+      - /var/data/soniqueteflamenco/media:/var/data/soniqueteflamenco/media:rw
+    networks:
+      - dokploy-network
+
+networks:
+  dokploy-network:
+    external: true
