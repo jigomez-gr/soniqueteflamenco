@@ -57,10 +57,10 @@ export default function Navbar() {
                 {/* Centered Brand Text Block */}
                 <a href="/" onClick={handleInicioClick} className="flex flex-col items-center leading-tight mb-2.5 select-none cursor-pointer">
                     <div className="flex items-center space-x-1.5 text-[10px] tracking-widest text-[#96680E] uppercase font-extrabold">
-                        <span>CENTRO DE YOGA FUENLABRADA</span>
+                        <span>soniqueteflamenco.com</span>
                     </div>
-                    <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#800020] tracking-wide uppercase font-editorial">
-                        Salvadora Conesa
+                    <h2 className="font-serif text-lg sm:text-xl xl:text-2xl font-bold text-[#800020] tracking-wide uppercase font-editorial text-center max-w-3xl">
+                        PROMOCION DE ARTISTAS Y REALIZACION DE CONCIERTOS DE FLAMENCO
                     </h2>
                 </a>
 
@@ -106,9 +106,9 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Header Layout */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5 flex items-center justify-between xl:hidden relative h-[64px]">
+            <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 py-1.5 flex items-center justify-between xl:hidden relative min-h-[64px]">
                 {/* Left side: Hamburger button + Logo */}
-                <div className="flex items-center space-x-2 select-none shrink-0">
+                <div className="flex items-center space-x-1.5 sm:space-x-2 select-none shrink-0">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
                         className="text-[#1C1C1C] hover:text-[#800020] focus:outline-none p-1"
@@ -120,23 +120,23 @@ export default function Navbar() {
                         <img
                             src="/logos/soniqueteflamenco_512x512.png"
                             alt="Logo Soniquete Flamenco"
-                            className="h-11 w-auto object-contain transition duration-200"
+                            className="h-10 sm:h-11 w-auto object-contain transition duration-200"
                         />
                     </a>
                 </div>
 
                 {/* Center: Brand TEXT */}
-                <div className="flex-1 flex flex-col items-center justify-center select-none text-center px-2 leading-tight min-w-0">
-                    <span className="text-[8.5px] xs:text-[9.5px] tracking-wider text-[#96680E] uppercase font-extrabold truncate max-w-full">
-                        CENTRO DE YOGA FUENLABRADA
+                <div className="flex-1 flex flex-col items-center justify-center select-none text-center px-1.5 sm:px-3 leading-tight min-w-0">
+                    <span className="text-[8px] xs:text-[9px] sm:text-[10px] tracking-wider text-[#96680E] uppercase font-extrabold">
+                        soniqueteflamenco.com
                     </span>
-                    <span className="font-serif text-[15px] xs:text-[18px] font-black text-[#800020] uppercase tracking-wide leading-none mt-1 font-editorial truncate max-w-full">
-                        Salvadora Conesa
+                    <span className="font-serif text-[10px] xs:text-[11px] sm:text-[13px] md:text-[15px] font-black text-[#800020] uppercase tracking-tight sm:tracking-wide leading-tight sm:leading-snug mt-0.5 font-editorial">
+                        PROMOCION DE ARTISTAS Y REALIZACION DE CONCIERTOS DE FLAMENCO
                     </span>
                 </div>
 
                 {/* Right side spacer to balance layout */}
-                <div className="w-[76px] shrink-0" aria-hidden="true" />
+                <div className="w-[66px] sm:w-[76px] shrink-0" aria-hidden="true" />
             </div>
 
             {/* Mobile Drawer Overlay */}
