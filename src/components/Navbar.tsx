@@ -60,7 +60,7 @@ export default function Navbar() {
                         <span>soniqueteflamenco.com</span>
                     </div>
                     <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#800020] tracking-wide uppercase font-editorial">
-                        PROMOCION ARTISTAS
+                        PROMOCION DE ARTISTAS
                     </h2>
                 </a>
 
@@ -127,11 +127,11 @@ export default function Navbar() {
 
                 {/* Center: Brand TEXT */}
                 <div className="flex-1 flex flex-col items-center justify-center select-none text-center px-2 leading-tight min-w-0">
-                    <span className="text-[8.5px] xs:text-[9.5px] tracking-wider text-[#96680E] uppercase font-extrabold truncate max-w-full">
+                    <span className="text-[8px] xs:text-[9px] tracking-wider text-[#96680E] uppercase font-extrabold truncate max-w-full">
                         soniqueteflamenco.com
                     </span>
-                    <span className="font-serif text-[15px] xs:text-[18px] font-black text-[#800020] uppercase tracking-wide leading-none mt-1 font-editorial truncate max-w-full">
-                        PROMOCION ARTISTAS
+                    <span className="font-serif text-[11.5px] xs:text-[13px] sm:text-[15px] font-black text-[#800020] uppercase tracking-wide leading-none mt-0.5 font-editorial truncate max-w-full">
+                        PROMOCION DE ARTISTAS
                     </span>
                 </div>
 

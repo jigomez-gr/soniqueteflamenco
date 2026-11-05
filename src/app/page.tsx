@@ -241,7 +241,7 @@ export default async function Home() {
             <span className="inline sm:hidden">Yoga · Gong · Gestalt · Constelaciones · Retiros</span>
           </div>
 
-          <h1 className="hero-title font-serif text-xl sm:text-3.5xl md:text-[44px] lg:text-[48px] font-extrabold tracking-tight text-[#800020] uppercase leading-tight mb-1 sm:mb-1.5 select-none">
+          <h1 className="hero-title font-serif text-[13.5px] min-[375px]:text-[15.5px] xs:text-[17px] sm:text-2xl md:text-[38px] lg:text-[46px] xl:text-[48px] font-extrabold tracking-tight text-[#800020] uppercase leading-tight mb-1 sm:mb-1.5 select-none whitespace-nowrap">
             HACEMOS CONCIERTOS FLAMENCOS
           </h1>
 
