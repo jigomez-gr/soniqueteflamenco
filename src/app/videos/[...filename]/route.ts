@@ -157,7 +157,7 @@ export async function GET(
     }
 
     if (!physicalPath) {
-      // Media not found on disk; return clean 404 without noisy console.warn
+      console.warn(`[Media Stream] Not found: ${rawPath}. Checked paths:`, candidatePaths);
       return new NextResponse(`Media asset not found: ${rawPath}. Please ensure /var/data/salvadora/media/videos/${rawPath} exists on the server.`, { status: 404 });
     }
 

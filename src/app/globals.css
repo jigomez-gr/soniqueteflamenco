@@ -13,8 +13,8 @@
   --color-jardin: #2E5A44;
   --color-carbon: #1C1C1C;
 
-  --font-sans: 'Outfit', var(--font-sans), system-ui, sans-serif;
-  --font-serif: 'Cormorant Garamond', var(--font-serif), Georgia, serif;
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-serif: var(--font-serif), Georgia, serif;
 }
 
 body {

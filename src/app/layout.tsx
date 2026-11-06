@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, Outfit } from "next/font/google";
 import "./globals.css";
 
+const cormorant = Cormorant_Garamond({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+});
+
+const outfit = Outfit({
+  variable: "--font-sans",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Centro de Yoga Fuenlabrada | Salvadora Conesa",
@@ -363,15 +376,9 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className="h-full antialiased"
+      className={`${cormorant.variable} ${outfit.variable} h-full antialiased`}
     >
-            <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
+      <head>
         <meta name="google-site-verification" content="tDy3JsMgHcVOcuQl4H3TM3YkYgVT2bZYwYyCpdZwzHM" />
         <link rel="api-catalog" href="/.well-known/api-catalog" />
         <link rel="ai-catalog" href="/.well-known/ai-catalog.json" />
