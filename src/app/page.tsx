@@ -246,7 +246,7 @@ export default async function Home() {
           </h1>
 
           <p className="hero-desc text-[9px] sm:text-xs tracking-[0.12em] sm:tracking-[0.2em] text-[#96680E] uppercase font-extrabold text-center max-w-3xl mb-3 sm:mb-4.5 mt-1 px-4 sm:px-0">
-            Desde 1986, guiando la práctica del yoga en un espacio cercano y sereno en Calle Holanda, 1, Fuenlabrada, junto al Metro Parque Europa (Línea 12 – MetroSur).
+            Impulsamos conciertos, acompañamos a los artistas y contribuimos a la difusión de un arte que sigue reinventándose cada vez que alguien canta, toca o baila.
           </p>
 
           {/* Framed Media Block mimicking ccmfalla.com Paintings */}
