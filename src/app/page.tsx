@@ -242,11 +242,11 @@ export default async function Home() {
           </div>
 
           <h1 className="hero-title font-serif text-[13.5px] min-[375px]:text-[15.5px] xs:text-[17px] sm:text-2xl md:text-[38px] lg:text-[46px] xl:text-[48px] font-extrabold tracking-tight text-[#800020] uppercase leading-tight mb-1 sm:mb-1.5 select-none whitespace-nowrap">
-            HACEMOS CONCIERTOS FLAMENCOS
+            HACEMOS EVENTOS FLAMENCOS
           </h1>
 
           <p className="hero-desc text-[9px] sm:text-xs tracking-[0.12em] sm:tracking-[0.2em] text-[#96680E] uppercase font-extrabold text-center max-w-3xl mb-3 sm:mb-4.5 mt-1 px-4 sm:px-0">
-            Impulsamos conciertos, acompañamos a los artistas y contribuimos a la difusión de un arte que sigue reinventándose cada vez que alguien canta, toca o baila.
+            Impulsamos eventos, acompañamos a los artistas y contribuimos a la difusión de un arte que sigue reinventándose cada vez que alguien canta, toca o baila.
           </p>
 
           {/* Framed Media Block mimicking ccmfalla.com Paintings */}
@@ -419,7 +419,7 @@ export default async function Home() {
                   A esa experiencia se suma una intensa trayectoria personal: el trabajo, la familia, la aventura de emprender distintos negocios y una vida recorrida con curiosidad y pasión.
                 </p>
                 <p>
-                  Pedro conoce el flamenco desde dentro. No solo por los conciertos que ha organizado, sino por las personas que ha conocido y los afectos que ha cultivado.
+                  Pedro conoce el flamenco desde dentro. No solo por los eventos que ha organizado, sino por las personas que ha conocido y los afectos que ha cultivado.
                 </p>
                 <div className="rounded-xl bg-[#FAF9F6] border-l-4 border-[#800020] p-4 text-[#800020] font-semibold italic text-sm sm:text-base">
                   «Para él, el flamenco es, antes que nada, una forma de vivir.»
@@ -504,7 +504,7 @@ export default async function Home() {
               Creemos en los artistas que necesitan escenarios, en el público que busca emociones verdaderas y en esa extraordinaria capacidad del flamenco para unir generaciones, territorios y sensibilidades.
             </p>
             <p className="text-sm sm:text-base text-white/80 max-w-3xl mx-auto leading-relaxed">
-              Queremos impulsar conciertos, acompañar a los artistas y contribuir, desde Madrid, a la difusión de un arte que no pertenece al pasado porque sigue reinventándose cada vez que alguien canta, toca o baila.
+              Queremos impulsar eventos, acompañar a los artistas y contribuir, desde Madrid, a la difusión de un arte que no pertenece al pasado porque sigue reinventándose cada vez que alguien canta, toca o baila.
             </p>
             <p className="text-sm sm:text-base text-[#E6C687] max-w-3xl mx-auto font-medium">
               No nos mueve la nostalgia, aunque tengamos mucha memoria.
@@ -514,7 +514,7 @@ export default async function Home() {
             </div>
             <div className="pt-4 border-t border-white/20 text-xs sm:text-sm text-white/70">
               <strong className="text-white text-base font-serif block">Soniqueteflamenco.com</strong>
-              <span className="italic">Promoción de Artistas y Realización de Conciertos de Flamenco.</span>
+              <span className="italic">Promoción de Artistas y Realización de Eventos de Flamenco.</span>
             </div>
           </div>
         </div>
